@@ -6,5 +6,5 @@ module.exports = () => {
 		({ name, currentPrice, prevPrice }) =>
 			name.length > 0 && !!currentPrice && !!prevPrice,
 	);
-	return { stocks: res };
+	return { stocksData: res };
 };

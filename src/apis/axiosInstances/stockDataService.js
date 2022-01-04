@@ -1,7 +1,8 @@
 import axios from 'axios';
+import { constants } from 'utils/constants';
 
 const stockDataApi = axios.create({
-	baseURL: 'http://localhost:4000',
+	baseURL: constants('stocksDataServiceUrl'),
 	timeout: 0,
 });
 
