@@ -150,7 +150,7 @@ module.exports = {
 					actions: './src/actions',
 					reducers: './src/reducers',
 					constants: './src/constants',
-					sass: 'app/sass',
+					sass: './src/sass',
 					stringConstants: './src/stringConstants',
 					testUtils: './src/testUtils',
 				},

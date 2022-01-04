@@ -1,0 +1,29 @@
+.watchlist {
+	height: calc(100% - 5.5rem);
+	display: flex;
+	flex-direction: column;
+	.itemBody {
+		.header {
+			width: 100%;
+			.title {
+				font-size: 1rem;
+				// line-height: 1;
+				// margin-bottom: 0.3rem;
+				.titleText {
+					max-width: 10rem;
+					overflow-x: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+				}
+			}
+		}
+	}
+	.empty {
+		display: flex;
+		flex-direction: column;
+		height: calc(100% - 2.5rem);
+		> div {
+			flex-grow: 1;
+		}
+	}
+}

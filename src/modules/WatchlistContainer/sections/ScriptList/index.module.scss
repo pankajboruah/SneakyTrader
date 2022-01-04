@@ -1,0 +1,23 @@
+.scriptList {
+	// flex-grow: 1;
+	overflow: scroll;
+	height: 100%;
+	> div:nth-child(1) {
+		padding: 0;
+		// height: 68vh;
+		overflow: scroll;
+		height: calc(100% - 2.5rem);
+		// @include if-device(desktop) {
+		// 	height: 59vh;
+		// }
+		// @include if-device(tablet) {
+		// 	height: 54vh;
+		// }
+		// @include if-device(phone) {
+		// 	height: 52vh;
+		// }
+		// @include if-device(large-desktop) {
+		// 	height: 76vh;
+		// }
+	}
+}

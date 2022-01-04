@@ -1,0 +1,101 @@
+.watchListItem {
+	border-radius: 4px;
+	.ItemBody {
+		&:hover {
+			background-color: $g2;
+		}
+		.header {
+			padding: 0.375rem 1.75rem;
+			flex-grow: 1;
+			@include if-device (phone) {
+				padding: 0.375rem 0.75rem;
+			}
+			@include if-device (tablet) {
+				padding: 0.375rem 1.5rem;
+			}
+			> div {
+				align-items: center;
+			}
+			.title {
+				font-size: 1rem;
+				line-height: 1;
+				margin-bottom: 0.3rem;
+				.titleText {
+					max-width: 10rem;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+				}
+			}
+			.subtitle {
+				font-size: 0.75rem;
+				color: #aaa;
+				background: $g2;
+				width: 3rem;
+				text-align: center;
+				border-radius: 2px;
+				line-height: 2;
+			}
+			.priceDescription {
+				font-size: 1rem;
+				line-height: 1;
+				margin-bottom: 0.3rem;
+				font-weight: 500;
+				text-align: end;
+				.currentPrice {
+					max-width: 10rem;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+				}
+			}
+			.percentage {
+				font-size: 0.75rem;
+				width: 5rem;
+				text-align: end;
+				line-height: 2;
+			}
+		}
+		.actions {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			display: flex;
+			justify-content: end;
+			align-items: center;
+			opacity: 0;
+			padding-right: 5rem;
+			@include if-device (phone) {
+				padding-right: 3.5rem;
+			}
+			&:hover {
+				opacity: 1;
+			}
+			.button {
+				margin-right: 0.75rem;
+				border-radius: 4px;
+				@include if-device (phone) {
+					margin-right: 0.5rem;
+				}
+			}
+		}
+		.green {
+			color: #4caf50;
+			&:hover {
+				border-color: #4caf50;
+			}
+		}
+		.red {
+			color: #ff5722;
+			&:hover {
+				border-color: #ff5722;
+			}
+		}
+		.disabled {
+			color: rgba(0, 0, 0, 0.25);
+			&:hover {
+				border-color: rgba(0, 0, 0, 0.25);
+			}
+		}
+	}
+}
